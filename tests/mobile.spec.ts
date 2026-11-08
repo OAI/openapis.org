@@ -1,0 +1,89 @@
+import { devices } from '@playwright/test';
+import { expect, test } from './fixtures';
+
+const PAGES = [
+  ['home', '/'],
+  ['prose page', '/about/'],
+  ['long prose', '/participatehow-to-contribute/governance/'],
+  ['blog index', '/blog/'],
+  ['blog post', '/blog/2026/05/19/announcing-arazzo-specification-1-1/'],
+  ['post with code', '/blog/2025/09/23/announcing-openapi-v3-2/'],
+  [
+    'post with video',
+    '/blog/2023/11/06/apidays-paris-2023-with-an-openapi-track-is-coming-this-december/',
+  ],
+  ['testimonials', '/testimonials/'],
+  ['people grid', '/about/technical-developer-community/'],
+  ['membership tables', '/membershipjoin/'],
+  ['membership benefits', '/membership-benefits/'],
+  ['cfp', '/oai-at-apidays-4-4/'],
+] as const;
+
+const iPhone = { ...devices['iPhone 13'] };
+delete (iPhone as { defaultBrowserType?: string }).defaultBrowserType;
+
+test.use(iPhone);
+
+for (const [label, path] of PAGES) {
+  test(`${label} does not scroll horizontally on mobile`, async ({ page }) => {
+    await page.goto(path);
+    const { scrollWidth, clientWidth } = await page.evaluate(() => ({
+      scrollWidth: document.documentElement.scrollWidth,
+      clientWidth: document.documentElement.clientWidth,
+    }));
+    expect(scrollWidth, `${label} overflows by ${scrollWidth - clientWidth}px`).toBeLessThanOrEqual(
+      clientWidth + 1,
+    );
+  });
+}
+
+test('wide tables scroll inside their own container', async ({ page }) => {
+  await page.goto('/membershipjoin/');
+  const wrapper = page.locator('.table-scroll').first();
+  await expect(wrapper).toBeVisible();
+  const scrollable = await wrapper.evaluate((el) => el.scrollWidth > el.clientWidth);
+  expect(scrollable).toBe(true);
+});
+
+test('mobile navigation opens and closes', async ({ page }) => {
+  await page.goto('/');
+  const nav = page.locator('#mobile-nav');
+  await expect(nav).toBeHidden();
+  await page.getByRole('button', { name: 'Toggle navigation' }).click();
+  await expect(nav).toBeVisible();
+  await expect(nav.getByRole('link', { name: 'FAQ' })).toBeVisible();
+});
+
+test('open mobile menu scrolls itself and locks the page behind it', async ({ page }) => {
+  await page.goto('/');
+  await page.getByRole('button', { name: 'Toggle navigation' }).click();
+
+  const state = await page.evaluate(() => {
+    const nav = document.querySelector('#mobile-nav') as HTMLElement;
+    const box = nav.getBoundingClientRect();
+    const pageBefore = window.scrollY;
+    nav.scrollTop = 250;
+    const header = document.querySelector('header')!.getBoundingClientRect();
+    return {
+      fitsInViewport: box.bottom <= window.innerHeight + 1,
+      startsAtHeader: Math.abs(box.top - header.bottom) < 2,
+      fillsToBottom: Math.abs(box.bottom - window.innerHeight) < 2,
+      panelScrollable: nav.scrollHeight > nav.clientHeight,
+      panelScrolled: nav.scrollTop > 0,
+      bodyLocked: getComputedStyle(document.body).overflow === 'hidden',
+      pageStayedPut: window.scrollY === pageBefore,
+    };
+  });
+
+  expect(state.fitsInViewport).toBe(true);
+  expect(state.startsAtHeader).toBe(true);
+  expect(state.fillsToBottom).toBe(true);
+  expect(state.panelScrollable).toBe(true);
+  expect(state.panelScrolled).toBe(true);
+  expect(state.bodyLocked).toBe(true);
+  expect(state.pageStayedPut).toBe(true);
+
+  await page.getByRole('button', { name: 'Toggle navigation' }).click();
+  await expect(page.locator('#mobile-nav')).toBeHidden();
+  expect(await page.evaluate(() => getComputedStyle(document.body).overflow)).not.toBe('hidden');
+});

@@ -1,0 +1,104 @@
+import Link from 'next/link';
+import { MDXRemote } from 'next-mdx-remote/rsc';
+import rehypeAutolinkHeadings from 'rehype-autolink-headings';
+import rehypeSlug from 'rehype-slug';
+import remarkGfm from 'remark-gfm';
+import type { AnchorHTMLAttributes, ImgHTMLAttributes } from 'react';
+import { rehypeEmbeds, rehypeTableScroll } from '@/lib/rehypeEmbeds';
+import { withBasePath } from '@/lib/site';
+import {
+  GoogleForm,
+  MailingListSignup,
+  MemberLandscape,
+  SlideShare,
+  YouTube,
+} from '@/components/Embeds';
+import { ConsentIframe } from '@/components/Embeds/ConsentIframe';
+import { Newsletter } from '@/components/Newsletter';
+import {
+  Action,
+  AnnouncementBar,
+  Benefit,
+  BenefitGrid,
+  Card,
+  CardGrid,
+  CTA,
+  Hero,
+  PeopleGrid,
+  Quote,
+  Section,
+  TestimonialGrid,
+} from '@/components/Sections';
+
+function MdxLink({ href = '', children, ...rest }: AnchorHTMLAttributes<HTMLAnchorElement>) {
+  if (href.startsWith('/')) {
+    return (
+      <Link href={href} {...rest}>
+        {children}
+      </Link>
+    );
+  }
+  const external = /^https?:\/\//.test(href);
+  return (
+    <a href={href} {...(external ? { target: '_blank', rel: 'noreferrer' } : {})} {...rest}>
+      {children}
+    </a>
+  );
+}
+
+function MdxImage({ src = '', alt = '', ...rest }: ImgHTMLAttributes<HTMLImageElement>) {
+  return (
+    <img src={withBasePath(String(src))} alt={alt} loading="lazy" decoding="async" {...rest} />
+  );
+}
+
+const components = {
+  a: MdxLink,
+  img: MdxImage,
+  iframe: ConsentIframe,
+  GoogleForm,
+  MailingListSignup,
+  MemberLandscape,
+  SlideShare,
+  YouTube,
+  Action,
+  AnnouncementBar,
+  Benefit,
+  BenefitGrid,
+  Card,
+  CardGrid,
+  CTA,
+  Hero,
+  Newsletter,
+  PeopleGrid,
+  Quote,
+  Section,
+  TestimonialGrid,
+};
+
+const HTML_COMMENT = /<!--([\s\S]*?)-->/g;
+
+function forMdx(source: string) {
+  return source.replace(HTML_COMMENT, (_match, body: string) => `{/*${body}*/}`);
+}
+
+export function Mdx({ source, format = 'md' }: { source: string; format?: 'md' | 'mdx' }) {
+  return (
+    <MDXRemote
+      source={format === 'mdx' ? forMdx(source) : source}
+      components={components}
+      options={{
+        mdxOptions: {
+          format,
+          remarkPlugins: [remarkGfm],
+          rehypePlugins: [
+            rehypeSlug,
+            [rehypeAutolinkHeadings, { behavior: 'wrap' }],
+            rehypeEmbeds,
+            rehypeTableScroll,
+          ],
+        },
+      }}
+    />
+  );
+}
