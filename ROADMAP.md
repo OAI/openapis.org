@@ -106,10 +106,10 @@ rationale. Check off each task as it lands.
 
 - [x] `ci.yml` — lint → typecheck → format:check → build → Playwright
 - [x] Frontmatter validated in CI by zod at build time (`ajv` kept for editor schemas)
-- [x] `deploy.yml` — GitHub Pages on `push: main`
+- [x] `deploy.yml` — GitHub Pages, started by hand (`workflow_dispatch`) for now
 - [x] `preview-build.yml` — `pull_request`, builds and uploads artifact, no secrets
 - [x] `preview-deploy.yml` — `workflow_run`, deploys to Cloudflare Pages, sticky comment
-- [x] `PULL_REQUEST_TEMPLATE.md`, `CODEOWNERS`
+- [x] `CODEOWNERS` (issue and pull request templates were dropped when moving to `OAI`)
 - [x] Issue forms: propose a blog post, fix a page
 - [x] `CONVENTIONS.md` (Markdown house style, after `OAI-Tracks`)
 

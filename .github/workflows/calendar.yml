@@ -7,7 +7,6 @@ on:
 
 permissions:
   contents: write
-  actions: write
 
 concurrency:
   group: calendar-sync
@@ -26,10 +25,8 @@ jobs:
       - run: npm run calendar:sync
       - run: npm run validate
 
-      - id: commit
-        run: |
+      - run: |
           if git diff --quiet -- data/calendar.json; then
-            echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
           git config user.name 'github-actions[bot]'
@@ -37,9 +34,3 @@ jobs:
           git add data/calendar.json
           git commit -m 'Sync community calendar from LFX Meetings'
           git push
-          echo "changed=true" >> "$GITHUB_OUTPUT"
-
-      - if: steps.commit.outputs.changed == 'true'
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: gh workflow run deploy.yml --ref "${{ github.ref_name }}"

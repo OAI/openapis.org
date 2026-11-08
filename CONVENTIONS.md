@@ -77,9 +77,10 @@ For pages (MDX), components are available directly: `<Newsletter />`, `<MemberLa
 like the LFX widget it replaces (FullCalendar with Day, 4 Days, Week, Month and List views, a
 meeting popup with Register, the iCal links, a mini calendar and the project filter).
 `npm run calendar:sync` fetches the meetings from the public API behind the LFX widget and
-rewrites `data/calendar.json`; the `Calendar sync` workflow does this every six hours, commits
-only when something changed, and then starts a deploy. To change a meeting, change it in LFX,
-not in this repository.
+rewrites `data/calendar.json`; the `Calendar sync` workflow does this every six hours and
+commits only when something changed. Deploys are started by hand for now (Actions → Deploy →
+Run workflow), so a synced change goes live with the next deploy. To change a meeting, change it
+in LFX, not in this repository.
 
 The LFX iCal subscription feed is not used as the source: it keeps repeating series that have
 ended in LFX, so it would list meetings that no longer take place.

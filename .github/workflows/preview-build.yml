@@ -1,0 +1,30 @@
+name: Preview build
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: preview-build-${{ github.event.number }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .node-version
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - run: echo "${{ github.event.number }}" > out/pr-number.txt
+      - uses: actions/upload-artifact@v7
+        with:
+          name: preview-site
+          path: out
+          retention-days: 3
+          include-hidden-files: true
