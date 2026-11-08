@@ -15,6 +15,7 @@
 - `permalink` in frontmatter is the source of truth for routing. It is carried verbatim from the
   WordPress original and must never be regenerated from the file path.
 - Structured data belongs in `data/*.yaml`, validated by `schemas/*.json`.
+- How to add posts, pages, TSC members and navigation entries: `docs/README.md`.
 
 ## Build
 

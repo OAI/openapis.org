@@ -36,7 +36,7 @@ async function isStale(source, target) {
 async function main() {
   const files = await walk(SOURCE_DIR);
   if (!files.length) {
-    console.log('no source assets; run npm run migrate:assets');
+    console.log('no source assets in assets/uploads');
     return;
   }
 
