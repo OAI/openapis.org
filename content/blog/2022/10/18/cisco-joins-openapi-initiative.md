@@ -20,19 +20,19 @@ As a catalyst in community-powered innovation in cloud native development, AI/ML
 
 “We are excited to welcome Cisco to the OpenAPI Initiative. Cisco is active with many open source and Linux Foundation projects, so it is a natural fit, and we look forward to working more closely with them to build the OpenAPI Specification,” said Kevin Swiber, Marketing Chair, OpenAPI Initiative and API Lifecycle Integration Specialist at Postman. “Our membership is open to anyone who understands the immense value of standardizing APIs and is interested in evolving and promoting a vendor neutral description format. Why not become a member and get started today?”
 
-**Want to become a member of the OpenAPI Initiative? Find more information here:** [https://www.openapis.org/membership/join](/membership/join)
+**Want to become a member of the OpenAPI Initiative? Find more information here:** [https://www.openapis.org/membershipjoin](/membershipjoin)
 
 **OpenAPI Resources**
 
-To learn more about participating in the evolution of the OpenAPI Specification: [https://www.openapis.org/participate/how-to-contribute](/participate/how-to-contribute)
+To learn more about participating in the evolution of the OpenAPI Specification: [https://www.openapis.org/participatehow-to-contribute](/participatehow-to-contribute)
 
-●   [Become a Member](/membership/join)
+●   [Become a Member](/membershipjoin)
 
 ●   [OpenAPI Specification Twitter](https://twitter.com/OpenApiSpec)
 
 ●   [OpenAPI Specification GitHub – Get started immediately](https://github.com/OAI/OpenAPI-Specification)!
 
-●   [Share your OpenAPI Spec v3 Implementations](/specification/v3implementations-form)
+●   [Share your OpenAPI Spec v3 Implementations](/specificationrepo/share-your-oas-implementations)
 
 About Cisco Open Source
 

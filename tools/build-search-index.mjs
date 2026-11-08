@@ -1,7 +1,6 @@
-import { readdir, readFile, writeFile } from 'node:fs/promises';
-import { join } from 'node:path';
+import { mkdir, readdir, readFile, writeFile } from 'node:fs/promises';
+import { dirname, join } from 'node:path';
 import matter from 'gray-matter';
-import { ensureDir } from './migrate/lib.mjs';
 
 const SOURCES = ['content/blog', 'content/pages', 'content/cfp'];
 const TARGET = 'public/search-index.json';
@@ -55,7 +54,7 @@ async function main() {
   }
 
   entries.sort((a, b) => (b.date ?? '').localeCompare(a.date ?? ''));
-  await ensureDir(TARGET);
+  await mkdir(dirname(TARGET), { recursive: true });
   await writeFile(TARGET, JSON.stringify(entries));
   console.log(`search index: ${entries.length} documents`);
 }

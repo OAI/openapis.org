@@ -62,14 +62,10 @@ async function main() {
   for (const file of files) {
     const html = await readFile(file, 'utf8');
     const $ = cheerio.load(html);
-    const isRedirect = $('meta[http-equiv="refresh"]').length > 0;
-
     for (const [, href] of html.matchAll(/href="(\/[^"#][^"]*)"/g)) {
       if (href.startsWith('/_next/')) continue;
       if (!seenHref.has(href)) seenHref.set(href, file);
     }
-
-    if (isRedirect) continue;
 
     $('script,style,noscript,nav,header,footer').remove();
     const article = $('article').first();

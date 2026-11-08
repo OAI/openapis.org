@@ -29,7 +29,7 @@ The interest for joining the OAI after its initial launch has been overwhelming 
 -   APInf – of [https://apinf.io/](https://apinf.io/)
 -   Mashape – [https://www.mashape.com/](https://www.mashape.com/)
 
-If you or your organization is interested in joining the OAI please don’t hesitate to get in touch with the OAI at [https://openapis.org/join](/join).
+If you or your organization is interested in joining the OAI please don’t hesitate to get in touch with the OAI at [https://www.openapis.org/membershipjoin](/membershipjoin).
 
 **4. New OAI leadership is taking form**
 

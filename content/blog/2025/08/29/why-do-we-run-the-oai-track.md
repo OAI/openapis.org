@@ -8,7 +8,7 @@ permalink: /blog/2025/08/29/why-do-we-run-the-oai-track
 generated: true
 ---
 
-Summer is nearly over in the northern hemisphere, we are three-quarters of the way through 2025, and already we’ve had great attendance at our OpenAPI Initiative (OAI) Track at Apidays New York, Helsinki, Munich, and DeveloperWeek San Francisco. We still have [API:World Santa Clara](/events/apiworld-santa-clara-2025), and Apidays [London](/events/apidays-london-2025), and [Paris](/events/apidays-paris-2025) to come this year, with our dedicated stage and all day track at API:World!
+Summer is nearly over in the northern hemisphere, we are three-quarters of the way through 2025, and already we’ve had great attendance at our OpenAPI Initiative (OAI) Track at Apidays New York, Helsinki, Munich, and DeveloperWeek San Francisco. We still have [API:World Santa Clara](https://events.openapis.org), and Apidays [London](https://events.openapis.org), and [Paris](https://events.openapis.org) to come this year, with our dedicated stage and all day track at API:World!
 
 With all these events past and planned, it seems like a good time to take stock and restate why we do the OAI Track.
 

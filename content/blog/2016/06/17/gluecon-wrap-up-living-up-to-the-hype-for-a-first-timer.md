@@ -10,7 +10,7 @@ generated: true
 
 Last year, I was disappointed to miss out on Gluecon. My colleagues spoke very highly of it — informative, state-of-the-art, and very non-commercial. I was glad that it worked with my schedule this year, and I was absolutely not disappointed. Eric Norlin ([@defrag](https://twitter.com/defrag)) does a fantastic job of ensuring that his speakers are immensely varied but have one thing in common: extremely high in quality.
 
-I was also excited because this was first event I was attending since the formation of the [Open API Initiative](/news/blogs/2016/01/next-steps-oai-exciting-2016-looms-ahead) and the renaming of the [Open API Specification](https://github.com/OAI/OpenAPI-Specification), and I figured it would get some attention. However, I had no idea exactly how much attention it would get.
+I was also excited because this was first event I was attending since the formation of the [Open API Initiative](/blog/2016/01/09/next-steps-for-the-oai-an-exciting-2016-looms-ahead) and the renaming of the [Open API Specification](https://github.com/OAI/OpenAPI-Specification), and I figured it would get some attention. However, I had no idea exactly how much attention it would get.
 
 Not a session went by in the API track without a mention (or, in some cases…many mentions) of Open API (well…more than a few times a speaker slipped and referred to the “Swagger spec”).
 

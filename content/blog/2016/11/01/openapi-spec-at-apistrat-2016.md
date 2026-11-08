@@ -19,9 +19,9 @@ There are many things you and your organization can do to help to community.
     -   Join our LinkedIn Group: [OpenAPI Specification](https://www.linkedin.com/groups/8556951)
     -   Attend, or offer to present at a [Meetup](https://www.meetup.com/The-Open-API-Initiative-OAI-Meetup/) in your area.
     -   and of course share on your own blog.
-4.  If you are looking to support the project directly, consider having your company join the OAI as a member. Fill out [this form](/membership/join) to learn more. The project charter is [here](/participate/how-to-contribute/governance).
+4.  If you are looking to support the project directly, consider having your company join the OAI as a member. Fill out [this form](/membershipjoin) to learn more. The project charter is [here](/participatehow-to-contribute/governance).
 
-Not sure how to get started? Read how to participate [here](/news/blogs/2016/07/you-can-get-involved-creating-openapi-specification-and-heres-how).
+Not sure how to get started? Read how to participate [here](/blog/2016/07/11/you-can-get-involved-in-creating-the-openapi-specification-and-heres-how).
 
 * * *
 

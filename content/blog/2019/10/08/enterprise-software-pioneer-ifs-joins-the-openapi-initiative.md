@@ -32,7 +32,7 @@ Visit the IFS Blog on technology, innovation and creativity: [https://blog.ifs.c
 
 # More OpenAPI Resources
 
--   [Become a Member](/membership/join)
+-   [Become a Member](/membershipjoin)
 -   [Join the OpenAPI Initiative Mailing List](/get-involved/mailing-lists)
 -   [How to Contribute to the OAS](https://github.com/OAI/OpenAPI-Specification/blob/master/GOVERNANCE.md)
 -   [Twitter](https://twitter.com/OpenApiSpec) (@OpenAPISepc)

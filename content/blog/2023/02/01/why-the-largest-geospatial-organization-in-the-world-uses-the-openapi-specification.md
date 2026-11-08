@@ -61,12 +61,12 @@ I would also like to mention, the OGC runs several initiatives, we run [innovati
 
 ## OpenAPI Resources
 
-To learn more about participating in the evolution of the OpenAPI Specification: [https://www.openapis.org/participate/how-to-contribute](/participate/how-to-contribute)
+To learn more about participating in the evolution of the OpenAPI Specification: [https://www.openapis.org/participatehow-to-contribute](/participatehow-to-contribute)
 
--    [Become a Member](/membership/join)
+-    [Become a Member](/membershipjoin)
 -   [OpenAPI Specification Twitter](https://twitter.com/OpenApiSpec)
 -   [OpenAPI Specification GitHub – Get started immediately](https://github.com/OAI/OpenAPI-Specification)!
--   [Share your OpenAPI Spec v3 Implementations](/specification/v3implementations-form)
+-   [Share your OpenAPI Spec v3 Implementations](/specificationrepo/share-your-oas-implementations)
 
 About the OpenAPI Initiative
 

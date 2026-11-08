@@ -29,8 +29,8 @@ Any developer can join the Technical Developer Community, and participate in the
 
 The OpenAPI specification must meet the requirements of developers, but also be accessible to newcomers. Balancing functionality and complexity is a delicate act, and the TSC is often wary of adding unnecessary features. However, they listen to the community, and respond when there is rising interest in a particular subject.
 
-For more information on how to contribute to the OpenAPI Initiative, visit [the website](/participate/how-to-contribute)!
+For more information on how to contribute to the OpenAPI Initiative, visit [the website](/participatehow-to-contribute)!
 
 -   [Participate](https://github.com/OAI/OpenAPI-Specification/blob/master/README.md#participation) in TSC weekly web conferences
--   [Become a member](/membership/join) of the OpenAPI Initiative
+-   [Become a member](/membershipjoin) of the OpenAPI Initiative
 -   [Watch the video recording](https://youtu.be/wBa9VH8_1Ic) of the OpenAPI is People! session

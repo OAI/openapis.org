@@ -15,7 +15,7 @@ generated: true
 
 The OpenAPI Specification is an integral part of software development and delivery of APIs. In 2023, we have been joining multiple API related conferences to connect directly with API users and enthusiasts around the world. Next up, the City of Light! Join us for the OpenAPI Initiative’s “OAI Track” at apidays Paris on December 6-7, 2023!
 
-[See our apidays Paris events page here](/events/apidays-paris-2023).
+[See our apidays Paris events page here](https://events.openapis.org).
 
 [Watch the video](https://www.youtube.com/watch?v=xPIVONV5owY)
 

@@ -8,7 +8,7 @@ permalink: /blog/2016/10/03/tdc-structural-improvements-explaining-the-3-0-spec-
 generated: true
 ---
 
-With the version 3.0 of the OpenAPI Specification nearing a beta candidate, this series of posts is meant to provide insight into what is changing and how. The [first post](/news/blogs/2016/07/you-can-get-involved-creating-openapi-specification-and-heres-how) described the background and rationale behind the next evolution of the spec, and the next few posts will address the progress made by the Technical Developer Community (TDC) so far.
+With the version 3.0 of the OpenAPI Specification nearing a beta candidate, this series of posts is meant to provide insight into what is changing and how. The [first post](/blog/2016/07/11/you-can-get-involved-in-creating-the-openapi-specification-and-heres-how) described the background and rationale behind the next evolution of the spec, and the next few posts will address the progress made by the Technical Developer Community (TDC) so far.
 
 In an effort to organize the work, [six omnibus meta-issues](https://github.com/OAI/OpenAPI-Specification/issues?utf8=%E2%9C%93&q=is%3Aissue+label%3A%22OpenAPI.Next+Proposal%22+label%3A%22Meta+Issue%22) have been created:
 
@@ -61,9 +61,9 @@ The options for describing examples have been [significantly expanded](https://g
 
 As you can see, this one meta-issue about the structural changes has a lot to digest. The next post will discuss changes to how requests are described in OpenAPI 3.0.
 
--   Previous post in this series Part 1 – [Background](/news/blogs/2016/07/you-can-get-involved-creating-openapi-specification-and-heres-how) and how to get involved!
+-   Previous post in this series Part 1 – [Background](/blog/2016/07/11/you-can-get-involved-in-creating-the-openapi-specification-and-heres-how) and how to get involved!
 
--   Next in the series Part 3 – [Request Parameters](/news/blogs/2016/10/tdc-request-parameters-explaining-30-spec-part-3)
+-   Next in the series Part 3 – [Request Parameters](/blog/2016/10/14/request-parameters-explaining-the-3-0-spec-part-3)
 -   Part 4 – [Protocol and Payload](/blog/2016/11/14/tdc-protocol-and-payload-explaining-the-3-0-spec-part-4)
 -   Part 5 – [Documentation](/blog/2016/11/17/tdc-documentation-explaining-the-3-0-spec-part-5)
 

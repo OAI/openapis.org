@@ -19,7 +19,7 @@ OpenAPI welcomes the [OpenTravel Alliance](https://opentravel.org/) as its newes
 
 OpenTravel is a not-for-profit trade association that develops data messaging structures in order to facilitate communication between the many facets of the travel industry. It is the travel industry’s only open-source, interoperability data standard. Using OpenTravel messaging, travelers can search, book, pay and check-in/out in a completely contactless environment.
 
-“We see solid strategic alignment between the mission of OpenTravel Alliance and that of the OpenAPI Initiative,” said Jeff ErnstFriedman, Executive Director at OpenTravel Alliance. “We share a goal of promoting open standards in the API economy and OAI is the nexus for all aspects of generating an API marketplace. We are looking forward to bringing the voice of the travel industry to the [2020 API Specifications Conference](/events/2020/06/12/the-api-specifications-conference-asc-2020-hold-the-dates-sept-9th-10th) being held Sept 9 – 10.”
+“We see solid strategic alignment between the mission of OpenTravel Alliance and that of the OpenAPI Initiative,” said Jeff ErnstFriedman, Executive Director at OpenTravel Alliance. “We share a goal of promoting open standards in the API economy and OAI is the nexus for all aspects of generating an API marketplace. We are looking forward to bringing the voice of the travel industry to the [2020 API Specifications Conference](https://events.openapis.org) being held Sept 9 – 10.”
 
 Tens of thousands of OpenTravel messaging structures are currently in use. The open source standard encompass air, rail, cruise, golf, tour packages, ground transportation, hotel and car rentals. The organization got its start using an XML messaging system, but has since made OpenTravel Messaging available in JSON, WSDL and OpenAPI Spec.
 
@@ -31,12 +31,12 @@ To help the travel industry adapt to COVID-19, OpenTravel has rolled out a new C
 
 ## OpenAPI Resources
 
-To learn more about how to participate in the evolution of the OpenAPI Specification: [https://www.openapis.org/participate/how-to-contribute](/participate/how-to-contribute)
+To learn more about how to participate in the evolution of the OpenAPI Specification: [https://www.openapis.org/participatehow-to-contribute](/participatehow-to-contribute)
 
--   [Become a Member](/membership/join)
+-   [Become a Member](/membershipjoin)
 -   [OpenAPI Specification Twitter](https://twitter.com/OpenApiSpec)
 -   [OpenAPI Specification GitHub – Get started immediately](https://github.com/OAI/OpenAPI-Specification)!
--   [Share your OpenAPI Spec v3 Implementations](/specification/v3implementations-form)
+-   [Share your OpenAPI Spec v3 Implementations](/specificationrepo/share-your-oas-implementations)
 
 ## About the OpenAPI Initiative
 

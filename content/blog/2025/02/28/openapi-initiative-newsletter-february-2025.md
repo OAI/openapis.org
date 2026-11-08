@@ -32,7 +32,7 @@ One final note is that our OpenAPI [specification page](https://spec.openapis.or
 
 The end of February also saw Leap 2.0, held by OpenAPI member [Tyk](https://tyk.io/). Leap 2.0 is a virtual conference hosted by BGB chairperson [Budha Bhattacharya](https://www.linkedin.com/in/budha-b/). The conference is focused on all things API governance and includes presentations from current OpenAPI TSC member [Lorna Mitchell](https://www.linkedin.com/in/lornajane/) and OAI luminaries including [Kin Lane](https://www.linkedin.com/in/kinlane/). API governance in the world of API sprawl and AI growth, especially with the advancements in Retrieval-Augmented Generation (RAG), means that having a strong grasp on both API design and deployment is vital for API providers.
 
-The event’s roster for 2025 is constantly updated, so please stay in touch with our [Events page](/events) to see where you can get together with OpenAPI community members for in-person and virtual events.
+The event’s roster for 2025 is constantly updated, so please stay in touch with our [Events page](https://events.openapis.org) to see where you can get together with OpenAPI community members for in-person and virtual events.
 
 ## Outreach Initiatives
 

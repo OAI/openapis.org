@@ -61,7 +61,7 @@ The Workflows SIG has been working hard to create the (working title) Workflows 
 
 The Workflows specification is currently at a release candidate version, with version 1.0.0 coming soon. Like Moonwalk, there’s the same opportunities to get involved:
 
--   Join the weekly meeting ([OAI calendar](/calendar)).
+-   Join the weekly meeting ([OAI calendar](/get-involved/about)).
 -   Take a look at [the repository](https://github.com/OAI/sig-workflows) and the release candidate [specification](https://github.com/OAI/sig-workflows/blob/main/versions/1.0.0.md) to find out more and provide feedback.
 -   Checkout [GitHub Discussions](https://github.com/OAI/sig-workflows/discussions) and get involved there.
 -   Join the Workflows [Slack channel](https://open-api.slack.com/archives/C022K8VD7AP).
@@ -70,11 +70,11 @@ For a detailed walkthrough of Workflows please read the [overview](https://swagg
 
 ### Moonwalk
 
-Moonwalk – our OpenAPI Specification v4 codename – has been in-flight since the start of the year. The project was formally announced on our blog [last December](/blog/2023/12/06/openapi-moonwalk-2024), where Marsh Gardiner and Darrel Miller highlighted what version 4 of OpenAPI aims to achieve, and the team has been hard at work getting started on the work. We’d also like to highlight [this post](https://modern-json-schema.com/your-path-from-openapi-30-to-31-and-beyond) from Henry Andrews that highlights the need for consistency between existing and future versions, which the team is working hard to achieve.
+Moonwalk – our OpenAPI Specification v4 codename – has been in-flight since the start of the year. The project was formally announced on our blog [last December](/blog/2023/12/04/openapi-moonwalk-2024), where Marsh Gardiner and Darrel Miller highlighted what version 4 of OpenAPI aims to achieve, and the team has been hard at work getting started on the work. We’d also like to highlight [this post](https://modern-json-schema.com/your-path-from-openapi-30-to-31-and-beyond) from Henry Andrews that highlights the need for consistency between existing and future versions, which the team is working hard to achieve.
 
 If you want help with the development of Moonwalk there are a couple of ways you can get involved:
 
--   Come to our weekly meeting where we discuss current developments and next steps ([OAI calendar](/calendar)).
+-   Come to our weekly meeting where we discuss current developments and next steps ([OAI calendar](/get-involved/about)).
 -   Join the Moonwalk [Slack channel](https://open-api.slack.com/archives/C06A0RPNPGE).
 -   Checkout [GitHub Discussions](https://github.com/OAI/sig-moonwalk/discussions) and get involved there.
 
@@ -92,11 +92,11 @@ There are a number of SIGs covering different topics and industry verticals. Vis
 
 ## Events
 
-There are a few upcoming events where OpenAPI will be running a session or track. You can find the full list of upcoming events on the [OAI event calendar](/events).
+There are a few upcoming events where OpenAPI will be running a session or track. You can find the full list of upcoming events on the [OAI event calendar](https://events.openapis.org).
 
 ### OpenAPI Mini Summit – April 15th, 2024
 
-First up we are looking forward to the [OpenAPI Mini Summit](/events/oai-minisummit-april-2024) being held on 15th April in Seattle as part of the [Open Source Summit North America (OSS NA)](https://events.linuxfoundation.org/open-source-summit-north-america/).
+First up we are looking forward to the [OpenAPI Mini Summit](https://events.openapis.org) being held on 15th April in Seattle as part of the [Open Source Summit North America (OSS NA)](https://events.linuxfoundation.org/open-source-summit-north-america/).
 
 We’ll review current developments in the OpenAPI world and provide a detailed walkthrough of the Workflows specification with some examples that will help bring it to life.
 
@@ -104,11 +104,11 @@ Registration is only $5, so please check out the [event registration page](https
 
 ### Apidays Singapore – April 17th – 18th, 2024
 
-We’ll be at [Apidays Singapore](/events/apidays-singapore-2024) hosting our OAI track hosted by Erik Wilde as part of the conference. We have speakers talking about the value of OpenAPI in their organizations, both from the perspective of the adoption of open standards and how they utilize OpenAPI to ensure consistency and quality in their APIs.
+We’ll be at [Apidays Singapore](https://events.openapis.org) hosting our OAI track hosted by Erik Wilde as part of the conference. We have speakers talking about the value of OpenAPI in their organizations, both from the perspective of the adoption of open standards and how they utilize OpenAPI to ensure consistency and quality in their APIs.
 
 ### Jax, Mainz – April 22nd – 26th, 2024
 
-We’ll also be at the [Jax conference](/events/jax-mainz-2024) in Mainz, Germany where we’ll be running another OAI track, again hosted by Erik Wilde. We’ll be hearing about the importance of OpenAPI for the API ecosystem and the importance of OpenAPI to API release delivery.
+We’ll also be at the [Jax conference](https://events.openapis.org) in Mainz, Germany where we’ll be running another OAI track, again hosted by Erik Wilde. We’ll be hearing about the importance of OpenAPI for the API ecosystem and the importance of OpenAPI to API release delivery.
 
 ## Event Outlook
 
@@ -117,7 +117,7 @@ There are some more events where we are planning OAI tracks:
 -   [Apidays New York](https://www.apidays.global/new-york/), April 30 & May 1, 2024
 -   [Apidays Helsinki & North](https://www.apidays.global/helsinki_and_north/), May 28th – 29th, 2024
 
-Please check out the [OAI event calendar](/events) for a full list of upcoming events.
+Please check out the [OAI event calendar](https://events.openapis.org) for a full list of upcoming events.
 
 ## Finally…
 

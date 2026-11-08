@@ -18,7 +18,7 @@ Over the past year, the Technical Developer Community (TDC) has sifted through h
 
 ## The Changes
 
-Over the last few months, we’ve made announcements of the upcoming changes in the spec [via a series of blog posts](/specification/v3insights), talks, and of course, changes to the spec itself. Here is a brief recap of some of the more notable changes:
+Over the last few months, we’ve made announcements of the upcoming changes in the spec [via a series of blog posts](/specificationrepo), talks, and of course, changes to the spec itself. Here is a brief recap of some of the more notable changes:
 
 -   Rearranged the structure of the specification for easier and extended reusability.
 -   Extended JSON Schema support to include \`oneOf\`, \`anyOf\` and \`not\` support.

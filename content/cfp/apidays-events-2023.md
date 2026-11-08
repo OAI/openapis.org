@@ -19,7 +19,7 @@ generated: true
 
 ## Venue: [Pullman Melbourne Albert Park, Australia](https://www.pullmanalbertpark.com.au/)
 
-## CFP: [Submit CFP](/events/apidays-australia-2023/cfp)
+## CFP: [Submit CFP](https://events.openapis.org)
 
 # **Event: [API Days Paris](https://www.apidays.global/paris/)**
 
@@ -27,4 +27,4 @@ generated: true
 
 ## Venue: [CNIT la Défense, Paris, France](https://parisladefense.com/fr/decouvrir/tours/cnit-centre-des-nouvelles-industries-et-technologies)
 
-## CFP: [Submit CFP](/events/apidays-paris-2023/cfp)
+## CFP: [Submit CFP](https://events.openapis.org)

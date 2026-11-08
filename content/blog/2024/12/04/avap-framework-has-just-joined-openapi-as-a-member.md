@@ -26,14 +26,14 @@ Raúl Nogales, Founder & CEO of AVAP, will serve as our representative in the OA
 
 **OpenAPI Resources**
 
-Want to become a member of the OpenAPI Initiative? Find more information here: [https://www.openapis.org/membership/join](/membership/join)
+Want to become a member of the OpenAPI Initiative? Find more information here: [https://www.openapis.org/membershipjoin](/membershipjoin)
 
-To learn more about participating in the evolution of the OpenAPI Specification: [https://www.openapis.org/participate/how-to-contribute](/participate/how-to-contribute)
+To learn more about participating in the evolution of the OpenAPI Specification: [https://www.openapis.org/participatehow-to-contribute](/participatehow-to-contribute)
 
 -   [OpenAPI Specification LinkedIn Page](https://www.linkedin.com/company/open-api-initiative/?viewAsMember=true)
 -   [OpenAPI Specification Twitter](https://twitter.com/OpenApiSpec)
 -   [OpenAPI Specification GitHub – Get started immediately](https://github.com/OAI/OpenAPI-Specification)!
--   [Share your OpenAPI Spec v3 Implementations](/specification/v3implementations-form)
+-   [Share your OpenAPI Spec v3 Implementations](/specificationrepo/share-your-oas-implementations)
 
 **About the OpenAPI Initiative**
 

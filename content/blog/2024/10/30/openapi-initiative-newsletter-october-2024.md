@@ -30,7 +30,7 @@ Our 3.0.4 and 3.1.1 patch releases of the OpenAPI Specification are also [comple
 
 The development of Moonwalk continues and has included revisiting the OpenAPI landscape and what each part of the ecosystem looks like. You can read more in our Moonwalk [Discussions](https://github.com/OAI/sig-moonwalk/discussions) board. Please also take time to read Henry Andrew’s [blog](https://modern-json-schema.com/analyzing-the-openapi-tooling-ecosystem) that describes the analysis of the OpenAPI tooling ecosystem, and presents both the architecture and relationships implicit in the ecosystem.
 
-As always our specification meetings are open to anyone. If you want to join to listen in or contribute, you’ll find the meetings in the [OAI calendar](/calendar). We are always looking for new ideas and contributors, so please feel free to come along.
+As always our specification meetings are open to anyone. If you want to join to listen in or contribute, you’ll find the meetings in the [OAI calendar](/get-involved/about). We are always looking for new ideas and contributors, so please feel free to come along.
 
 ## Events Round-up
 
@@ -44,9 +44,9 @@ The OpenAPI Initiative also appeared at the Nordic APIs Platform Summit, where [
 
 ## Event Outlook
 
-Our final dedicated OpenAPI track of 2024 will be at [apidays Paris](/events/apidays-paris-2024), 3rd – 5th December 2024. Apidays Paris is the flagship apidays event, and this year will cover many subjects including API lifecycle management, cloud-native infrastructure, GenAI, and GreenIT. OpenAPI is a major feature in any of these subjects, which is why our OpenAPI track is an important part of the apidays Paris experience.
+Our final dedicated OpenAPI track of 2024 will be at [apidays Paris](https://events.openapis.org), 3rd – 5th December 2024. Apidays Paris is the flagship apidays event, and this year will cover many subjects including API lifecycle management, cloud-native infrastructure, GenAI, and GreenIT. OpenAPI is a major feature in any of these subjects, which is why our OpenAPI track is an important part of the apidays Paris experience.
 
-Apidays Paris provides an opportunity for you to get involved. We are currently looking for speakers to join us on the OpenAPI track and share your stories about using OpenAPI in your organizations and industries. If you want to submit a proposal please go to our [submission page](/events/apidays-paris-2024-cfp) to send us your idea, where you’ll also find topics we are particularly interested in hearing about. Erik and the team will be in touch to discuss your proposal and potentially move forward with it to appear on our track in Paris.
+Apidays Paris provides an opportunity for you to get involved. We are currently looking for speakers to join us on the OpenAPI track and share your stories about using OpenAPI in your organizations and industries. If you want to submit a proposal please go to our [submission page](https://events.openapis.org) to send us your idea, where you’ll also find topics we are particularly interested in hearing about. Erik and the team will be in touch to discuss your proposal and potentially move forward with it to appear on our track in Paris.
 
 ## Finally…
 

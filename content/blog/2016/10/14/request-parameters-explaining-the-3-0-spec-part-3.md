@@ -10,7 +10,7 @@ permalink: /blog/2016/10/14/request-parameters-explaining-the-3-0-spec-part-3
 generated: true
 ---
 
-_With the version 3.0 of the OpenAPI Specification nearing a beta candidate, this series of posts is meant to provide insight into what is changing and how from the perspective the Technical Developer Community (TDC). The first post described the_ [_background and rationale behind the next evolution of the spec_](/news/blogs/2016/07/you-can-get-involved-creating-openapi-specification-and-heres-how)_, the second covered_ [_Structural Changes_](/news/blogs/2016/10/tdc-structural-improvements-explaining-30-spec-part-2)_, and the next few posts will address Protocol, Documentation, and other remaining open items._
+_With the version 3.0 of the OpenAPI Specification nearing a beta candidate, this series of posts is meant to provide insight into what is changing and how from the perspective the Technical Developer Community (TDC). The first post described the_ [_background and rationale behind the next evolution of the spec_](/blog/2016/07/11/you-can-get-involved-in-creating-the-openapi-specification-and-heres-how)_, the second covered_ [_Structural Changes_](/blog/2016/10/03/tdc-structural-improvements-explaining-the-3-0-spec-part-2)_, and the next few posts will address Protocol, Documentation, and other remaining open items._
 
 ## **Request Parameters**
 
@@ -43,8 +43,8 @@ While TDC members unanimously agreed that while using cookies is not a best prac
 
 In the next post we will cover new interaction patterns to be supported and some planned changes for payload descriptions.
 
--   Part 1 – [Background](/news/blogs/2016/07/you-can-get-involved-creating-openapi-specification-and-heres-how) and how to get involved!
--   Previous post in this series: Part 2 – [Structural Changes](/news/blogs/2016/10/tdc-structural-improvements-explaining-30-spec-part-2)
+-   Part 1 – [Background](/blog/2016/07/11/you-can-get-involved-in-creating-the-openapi-specification-and-heres-how) and how to get involved!
+-   Previous post in this series: Part 2 – [Structural Changes](/blog/2016/10/03/tdc-structural-improvements-explaining-the-3-0-spec-part-2)
 
 -   Next post in this series: Part 4 – [Protocol and Payload](/blog/2016/11/14/tdc-protocol-and-payload-explaining-the-3-0-spec-part-4)
 -   Part 5 – [Documentation](/blog/2016/11/17/tdc-documentation-explaining-the-3-0-spec-part-5)

@@ -58,7 +58,7 @@ The agenda of these events was dominated by the intersection of OpenAPI and arti
 
 Workflow orchestration has also emerged as a distinct concern, with multiple sessions led by [Frank Kilcommins](https://www.linkedin.com/in/frank-kilcommins/) exploring how standards like Arazzo and MCP can extend OpenAPI into the multi-step, agent-driven interactions that modern AI systems require. Underpinning all of this was a practical emphasis on tooling and automation and moving from from AI-assisted API design and automated linting to SDK generation and contract testing, reflecting an industry moving from manual API development toward highly automated, standards-driven pipelines.
 
-The busy conference season continues, with [Apidays Amsterdam](/events/apidays-amersterdam-2026) and [Apidays Munich](/events/apidays-munich-2026) in June and July respectively. We’ll be continuing with the themes above, so if you are interested in hearing more about the intersection between OpenAPI and AI, be sure to make it to the OAI Tracks!
+The busy conference season continues, with [Apidays Amsterdam](https://events.openapis.org) and [Apidays Munich](https://events.openapis.org) in June and July respectively. We’ll be continuing with the themes above, so if you are interested in hearing more about the intersection between OpenAPI and AI, be sure to make it to the OAI Tracks!
 
 ## Ecosystem Spotlight – Interledger Foundation and Open Payments API
 

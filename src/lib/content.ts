@@ -30,14 +30,10 @@ const pageFrontmatter = z.object({
 });
 
 const authorSchema = z.array(z.object({ slug: z.string(), name: z.string() }));
-const redirectSchema = z.array(
-  z.object({ from: z.string(), to: z.string(), reason: z.string().optional() }),
-);
 
 export type Post = z.infer<typeof postFrontmatter> & { body: string; file: string };
 export type Page = z.infer<typeof pageFrontmatter> & { body: string; file: string };
 export type Author = { slug: string; name: string };
-export type Redirect = { from: string; to: string; reason?: string };
 
 async function walk(dir: string): Promise<string[]> {
   const out: string[] = [];
@@ -102,10 +98,6 @@ export function getPages(): Promise<Page[]> {
 
 export async function getAuthors(): Promise<Author[]> {
   return authorSchema.parse(yaml.load(await readFile('data/authors.yaml', 'utf8')));
-}
-
-export async function getRedirects(): Promise<Redirect[]> {
-  return redirectSchema.parse(yaml.load(await readFile('data/redirects.yaml', 'utf8')));
 }
 
 export async function getAuthorName(slug: string): Promise<string> {

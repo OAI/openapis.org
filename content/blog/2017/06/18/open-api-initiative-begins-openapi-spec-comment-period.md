@@ -34,7 +34,7 @@ NOTE: Members of the TDC have expressed a preference for pull requests, since it
 
 If you’re looking to generally learn more about the OpenAPI Spec v3, check-out:
 
--   Introduction to OpenAPI Spec v3 series: [https://www.openapis.org/specification/v3insights](/specification/v3insights)
+-   Introduction to OpenAPI Spec v3 series: [https://www.openapis.org/specificationrepo](/specificationrepo)
 
 Now playing: [Closing Time by Semisonic](https://www.bing.com/search?q=semisonic+closing+time)
 

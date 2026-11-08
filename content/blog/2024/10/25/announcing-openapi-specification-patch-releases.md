@@ -63,10 +63,10 @@ Particular thanks goes to the Technical Steering Committee members who teamed up
 There are lots of ways to get involved with OpenAPI, and we like to hear from everyone who uses OpenAPI (or wants to)!
 
 -   Start with [the OpenAPI Initiative website](/) to find out more about all our activities.
--   Your organization can [become an OpenAPI Initiative member](/membership/join).
+-   Your organization can [become an OpenAPI Initiative member](/membershipjoin).
 -   All the standards and resources are developed in the open on GitHub. Try one of these projects [OpenAPI specification](https://github.com/OAI/OpenAPI-Specification), the new [Arazzo specification](https://github.com/OAI/Arazzo-Specification), the [Overlay specification](https://github.com/OAI/Overlay-Specification), or the [learn.openapis.org site](https://github.com/OAI/learn.openapis.org). All the projects have open issues/discussions and welcome new contributors.
 -   If you are new to OpenAPI we also have our OpenAPI Fundamentals training course on [LF Training](https://training.linuxfoundation.org/express-learning/openapi-fundamentals-lfel1011/) (which is free!)
--   Join one of our [regular open meetings](/calendar) to find out what’s coming up and to get involved.
+-   Join one of our [regular open meetings](/get-involved/about) to find out what’s coming up and to get involved.
 -   We have a Slack group that you can also [get an invitation to join](https://communityinviter.com/apps/open-api/openapi).
 
 Authors: [Lorna Mitchell](https://www.linkedin.com/in/lornajane/), [Henry Andrews](https://modern-json-schema.com/)

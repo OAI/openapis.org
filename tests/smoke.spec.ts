@@ -29,12 +29,12 @@ test('taxonomy archives resolve', async ({ page }) => {
   await expect(page.getByRole('heading', { level: 1, name: 'Blog' })).toBeVisible();
 });
 
-test('dropped WordPress page serves a redirect stub', async ({ page }) => {
-  const response = await page.request.get('/login/');
-  expect(response.status()).toBe(200);
-  const html = await response.text();
-  expect(html).toContain('rel="canonical"');
-  expect(html).toContain('http-equiv="refresh"');
+test('old WordPress-only addresses are not found', async ({ page }) => {
+  for (const path of ['/login/', '/calendar/', '/events/', '/membership/join/']) {
+    const response = await page.request.get(path);
+    expect(response.status(), path).toBe(404);
+    expect(await response.text(), path).not.toContain('http-equiv="refresh"');
+  }
 });
 
 test('there is no dark mode', async ({ page }) => {

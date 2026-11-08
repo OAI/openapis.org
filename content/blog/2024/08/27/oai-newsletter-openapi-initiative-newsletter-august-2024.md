@@ -35,7 +35,7 @@ Work continues on multiple releases of the OpenAPI Specification. We now have se
 
 Work on OpenAPI 4.0, codenamed Moonwalk, also continues apace under the auspices of the Moonwalk Special Interest Group (SIG). You can catch up with latest developments on Moonwalk [Discussions](https://github.com/OAI/sig-moonwalk/discussions), where we publish discussion points from each meeting.
 
-Our specification meetings are, of course, open to anyone. If you want to join to listen in or contribute, you’ll find the meetings in the [OAI calendar](/calendar).
+Our specification meetings are, of course, open to anyone. If you want to join to listen in or contribute, you’ll find the meetings in the [OAI calendar](/get-involved/about).
 
 ## Community News
 
@@ -49,7 +49,7 @@ Conference season is also about to ramp up again and we’ve got several OAI tra
 
 ### Apidays London – 18th – 19th September, 2024
 
-Our next event will be [apidays London](/events/apidays-london-2024), where Erik Wilde will host our OAI track. The theme of apidays London is “APIs for Smarter Platforms and Business Processes”, and will focus on how AI and APIs act as enablers for businesses. Our OAI track will therefore look at standards and practices in the OpenAPI ecosystem that act as enablers for business. We’ll hear from Frank Kilcommins with an update on Arazzo, Lorna Mitchell on API governance, and Gobe Hobona on API standardization for geospatial ecosystems.
+Our next event will be [apidays London](https://events.openapis.org), where Erik Wilde will host our OAI track. The theme of apidays London is “APIs for Smarter Platforms and Business Processes”, and will focus on how AI and APIs act as enablers for businesses. Our OAI track will therefore look at standards and practices in the OpenAPI ecosystem that act as enablers for business. We’ll hear from Frank Kilcommins with an update on Arazzo, Lorna Mitchell on API governance, and Gobe Hobona on API standardization for geospatial ecosystems.
 
 ### Nordic APIs Platform Summit – 7th – 9th October, 2024
 
@@ -59,8 +59,8 @@ The [Nordic APIs Platform Summit](https://nordicapis.com/events/platform-summit-
 
 We are planning OAI tracks at the following events:
 
--   [apidays Australia](/events/apidays-australia-2024), 16th – 17th October, 2024
--   [apidays Paris](/events/apidays-paris-2024), 3rd – 5th December, 2024
+-   [apidays Australia](https://events.openapis.org), 16th – 17th October, 2024
+-   [apidays Paris](https://events.openapis.org), 3rd – 5th December, 2024
 
 ## Finally…
 

@@ -30,7 +30,7 @@ The OpenAPI Specification is the center of the OAI and the focus of our efforts 
 
 The OpenAPI Specification is undergoing active development with support from dedicated volunteers, with a new major version coming soon focused on the semantic improvement of the specification and supporting AI use cases. The OAI is constantly evaluating how we can improve the development of the standard, and provide support for tooling makers who are implementing the specification.
 
-OpenAPI is currently at version 3.1.1, with multiple versions planned to harmonize the features of the Specification in readiness for version 4.0.0, our next major version codenamed “Moonwalk”. You can read more about version 3.1.1 on our [standards site](https://spec.openapis.org/oas/v3.1.1.html) and discover the goals of Moonwalk on [our blog](/blog/2023/12/06/openapi-moonwalk-2024). We also released [version 3.0.4](https://spec.openapis.org/oas/v3.0.4.html) in 2024, again in an effort to harmonize guidance across different versions.
+OpenAPI is currently at version 3.1.1, with multiple versions planned to harmonize the features of the Specification in readiness for version 4.0.0, our next major version codenamed “Moonwalk”. You can read more about version 3.1.1 on our [standards site](https://spec.openapis.org/oas/v3.1.1.html) and discover the goals of Moonwalk on [our blog](/blog/2023/12/04/openapi-moonwalk-2024). We also released [version 3.0.4](https://spec.openapis.org/oas/v3.0.4.html) in 2024, again in an effort to harmonize guidance across different versions.
 
 ## Arazzo Specification
 

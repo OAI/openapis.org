@@ -5,7 +5,6 @@ import yaml from 'js-yaml';
 
 const PAIRS = [
   ['data/authors.yaml', 'schemas/authors.schema.json'],
-  ['data/redirects.yaml', 'schemas/redirects.schema.json'],
   ['data/nav.yaml', 'schemas/nav.schema.json'],
   ['data/social.yaml', 'schemas/social.schema.json'],
   ['data/tsc-members.yaml', 'schemas/tsc-members.schema.json'],

@@ -65,10 +65,10 @@ Thank you all for making Arazzo 1.0.1 a reality!
 There are many ways to get involved with Arazzo and the broader OpenAPI Initiative, and we’d like to hear from everyone who uses Arazzo (or wants to)!
 
 -   Start with the [_OpenAPI Initiative website_](/) to find out about all our activities.
--   Your organization can [_become an OpenAPI member_](/membership/join).
+-   Your organization can [_become an OpenAPI member_](/membershipjoin).
 -   All the standards and resources that we publish are developed in the open on GitHub. You can check out the [_Arazzo Specification_](https://github.com/OAI/Arazzo-Specification), the [_Overlay Specification_](https://github.com/OAI/Overlay-Specification), the [_OpenAPI Specification_](https://github.com/OAI/OpenAPI-Specification), or indeed the learning resources at [_learn.openapis.org_](http://learn.openapis.org) website.
 -   You can improve your skills and knowledge with the free OpenAPI Fundamentals course on [_LF Training_](https://training.linuxfoundation.org/express-learning/openapi-fundamentals-lfel1011/).
--   Join one of our [_open meetings_](/calendar) to get involved with our next iterations.
+-   Join one of our [_open meetings_](/get-involved/about) to get involved with our next iterations.
 -   Join our [_Slack workspace_](https://communityinviter.com/apps/open-api/openapi).
 
 Author: [Frank Kilcommins](http://www.linkedin.com/in/frank-kilcommins)

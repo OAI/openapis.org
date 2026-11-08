@@ -55,4 +55,4 @@ You can register here: [https://ticket.apidays.global/event/apidays-australia-20
 Don’t miss out on this unique opportunity. Submit your proposals [here](https://apidays.typeform.com/to/ILJeAaV8?typeform-source=www.apidays.global#event_name=xxxxx), mark your calendars, and prepare to dive deep into the world of OpenAPI.
 
 We hope to see you there!
-For further updates and announcements, watch our [apidays Australia](/events/apidays-australia-2023/cfp) page.
+For further updates and announcements, watch our [apidays Australia](https://events.openapis.org) page.

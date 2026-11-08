@@ -23,6 +23,6 @@ The OAI has named Refael Botbol Weiss ([LinkedIn](https://www.linkedin.com/in/re
 
 The initial steps will be to form a forum of experts in the world of development and finance to discuss the issues surrounding open finance implementation as well as the API behaviors necessary to facilitate Open Finance solutions. Additionally, the primary use cases of Open Finance technology will be discussed, which may include banks, credit unions, insurance companies, credit bureaus, real estate groups, financial planners, and/or others.
 
-Participation in this SIG will be open to any member of the OAI. To sign up for the OAI, [visit here](/membership/join).
+Participation in this SIG will be open to any member of the OAI. To sign up for the OAI, [visit here](/membershipjoin).
 
 For updates and more information about getting involved, [click here](https://github.com/OAI/sig-finance).

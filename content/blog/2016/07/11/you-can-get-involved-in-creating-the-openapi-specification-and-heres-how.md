@@ -10,7 +10,7 @@ generated: true
 
 How is the OpenAPI Specification evolving? What’s the process? How can you get involved? Today we’ll try to answer those questions and shine a light on:
 
--   The [Technical Developer Community](/governance#TDC), why it exists and how it operates
+-   The [Technical Developer Community](/participatehow-to-contribute/governance#TDC), why it exists and how it operates
 -   The timeline and roadmap for the next major revision of the OpenAPI Specification
 
 ![Open API Logo](http://oapi.wpengine.com/wp-content/uploads/2016/10/OpenAPI_Pantone-300x80.png)
@@ -27,8 +27,8 @@ How can you get involved? If you have a particular interest in a topic, search t
 
 Some of those topics are philosophical, such as [Is OpenAPI an Open World or Closed World Contract?](https://github.com/OAI/OpenAPI-Specification/issues/568)Some of them are passionate, such as [Support for multiple request/response models based on headers](https://github.com/OAI/OpenAPI-Specification/issues/146). Other topics go deep into questions about [JSON-Schema](https://github.com/OAI/OpenAPI-Specification/issues/333) or the [YAML specifications](https://github.com/OAI/OpenAPI-Specification/pull/635). Over the next few weeks, we’ll post here on the blog about some of the meta-issues and sub-issues and give some insight into the nature of the discussions around them.
 
--   Follow the next post in this series: [Structural Improvements: explaining the OpenAPI spec 3.0, part 2](/news/blogs/2016/10/tdc-structural-improvements-explaining-30-spec-part-2)
--   Part 3 – [Request Parameters](/news/blogs/2016/10/tdc-request-parameters-explaining-30-spec-part-3)
+-   Follow the next post in this series: [Structural Improvements: explaining the OpenAPI spec 3.0, part 2](/blog/2016/10/03/tdc-structural-improvements-explaining-the-3-0-spec-part-2)
+-   Part 3 – [Request Parameters](/blog/2016/10/14/request-parameters-explaining-the-3-0-spec-part-3)
 -   Part 4 – [Protocol and Payload](/blog/2016/11/14/tdc-protocol-and-payload-explaining-the-3-0-spec-part-4)
 -   Part 5 – [Documentation](/blog/2016/11/17/tdc-documentation-explaining-the-3-0-spec-part-5)
 

@@ -25,7 +25,7 @@ Karate Labs API data importer enables teams to import all leading sources of API
 
 “With more teams adopting the OpenAPI Specification as a standard, we see the opportunity to align test automation efforts and further accelerate adoption. We are excited to join the OpenAPI Initiative to deliver even more value to our customers,” said Kapil Bakshi, co-founder, and CEO of Karate Labs. “With software products depending more than ever on APIs, the OpenAPI specification has injected more rigor and collaboration into how APIs are designed, implemented, and consumed. Karate Labs aims to simplify test automation for business stakeholders, product owners, and QA specialists.”
 
-OpenAPI Initiative is always welcoming NEW MEMBERS, find more information about becoming an OpenAPI member [here](/membership/join)!
+OpenAPI Initiative is always welcoming NEW MEMBERS, find more information about becoming an OpenAPI member [here](/membershipjoin)!
 
 Karate Labs Resources:
 
@@ -37,12 +37,12 @@ Karate Labs Resources:
 
 OpenAPI Resources
 
-To learn more about participating in the evolution of the OpenAPI Specification: [https://www.openapis.org/participate/how-to-contribute](/participate/how-to-contribute)
+To learn more about participating in the evolution of the OpenAPI Specification: [https://www.openapis.org/participatehow-to-contribute](/participatehow-to-contribute)
 
--   [Become a member](/membership/join)
+-   [Become a member](/membershipjoin)
 -   [OpenAPI Specification Twitter](https://twitter.com/OpenApiSpec)
 -   [OpenAPI Specification GitHub – Get started immediately!](https://github.com/OAI/OpenAPI-Specification)
--   [Share your OpenAPI Spec v3 Implementations](/specification/v3implementations-form)
+-   [Share your OpenAPI Spec v3 Implementations](/specificationrepo/share-your-oas-implementations)
 
 About the OpenAPI Initiative
 

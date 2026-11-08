@@ -364,13 +364,10 @@ test.describe('without JavaScript', () => {
   });
 });
 
-test('the nav and the legacy /calendar URL lead to the calendar page', async ({ page }) => {
+test('the nav leads to the calendar page', async ({ page }) => {
   await page.goto('/');
   const nav = page.getByRole('navigation', { name: 'Main' });
   await nav.getByRole('button', { name: 'Participate', exact: true }).click();
   await nav.getByRole('link', { name: 'Calendar' }).click();
-  await expect(page).toHaveURL(/\/get-involved\/about\/?$/);
-
-  await page.goto('/calendar/');
   await expect(page).toHaveURL(/\/get-involved\/about\/?$/);
 });

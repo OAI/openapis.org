@@ -47,11 +47,11 @@ _Thank you Addison for taking the time to talk with us!_
 
 ## Joining the OpenAPI Initiative
 
-Want to become a member of the OpenAPI Initiative? Find more information [here](/membership/join).
+Want to become a member of the OpenAPI Initiative? Find more information [here](/membershipjoin).
 
 While you think about it, please checkout these resources:
 
--   [How to contribute guide.](/participate/how-to-contribute)
+-   [How to contribute guide.](/participatehow-to-contribute)
 -   [Our Specifications homepage](https://spec.openapis.org/), with the latest versions of [OpenAPI](https://spec.openapis.org/oas/latest.html), [Arazzo](https://spec.openapis.org/arazzo/latest.html), and [Overlay.](https://spec.openapis.org/overlay/latest.html)
 -   [OpenAPI Initiative on GitHub](https://github.com/OAI), where we develop our specifications.
 
