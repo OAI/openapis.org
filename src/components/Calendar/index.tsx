@@ -1,13 +1,5 @@
-import { Roboto_Slab } from 'next/font/google';
 import { CommunityCalendar as Widget } from '@/components/Calendar/CommunityCalendar';
 import { getCalendar } from '@/lib/content';
-
-const robotoSlab = Roboto_Slab({
-  subsets: ['latin'],
-  weight: ['400', '700'],
-  variable: '--font-roboto-slab',
-  display: 'swap',
-});
 
 const LINK = 'text-[color:var(--brand-link)] underline underline-offset-4';
 
@@ -16,7 +8,7 @@ export async function CommunityCalendar() {
   const regular = calendar.meetings.filter((meeting) => meeting.url !== null);
 
   return (
-    <div className={robotoSlab.variable}>
+    <div>
       <Widget calendar={calendar} />
 
       <noscript>

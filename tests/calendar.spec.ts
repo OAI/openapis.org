@@ -196,19 +196,60 @@ test('Previous, Next and Today move through months', async ({ page }) => {
   await expect(today).toBeDisabled();
 });
 
-test('the mini calendar jumps the main calendar to a date', async ({ page }) => {
+test('the mini calendar selection follows clicks and jumps the main calendar', async ({ page }) => {
   await page.goto('/get-involved/about/');
   const sidebar = page.getByRole('complementary', { name: 'Calendar navigation' });
-  await expect(sidebar.locator('[aria-current="date"]')).toHaveText(String(partsIn(now).day));
+  const dayButton = (date: Date) =>
+    sidebar.getByRole('button', {
+      name: new Intl.DateTimeFormat('en-US', { dateStyle: 'full' }).format(date),
+    });
+  const { year, month, day } = partsIn(now);
+  const today = dayButton(new Date(year, month - 1, day));
+
+  await expect(today).toHaveAttribute('aria-current', 'date');
+  await expect(today).toHaveAttribute('aria-pressed', 'true');
+  await expect(today).toHaveCSS('background-color', 'rgb(0, 111, 194)');
+
+  const sameMonth = dayButton(new Date(year, month - 1, day === 20 ? 21 : 20));
+  await sameMonth.click();
+  await expect(sameMonth).toHaveAttribute('aria-pressed', 'true');
+  await expect(sameMonth).toHaveCSS('background-color', 'rgb(0, 111, 194)');
+  await expect(today).toHaveAttribute('aria-pressed', 'false');
+  await expect(today).toHaveCSS('background-color', 'rgb(226, 232, 240)');
+  await expect(widget(page).locator('.calendar-title')).toHaveText(monthTitle(now));
 
   await sidebar.getByRole('button', { name: 'Next Month' }).click();
-  const nextMonth = new Date(partsIn(now).year, partsIn(now).month, 15);
-  await sidebar
-    .getByRole('button', {
-      name: new Intl.DateTimeFormat('en-US', { dateStyle: 'full' }).format(nextMonth),
-    })
-    .click();
+  const nextMonth = new Date(year, month, 15);
+  await dayButton(nextMonth).click();
+  await expect(dayButton(nextMonth)).toHaveAttribute('aria-pressed', 'true');
   await expect(widget(page).locator('.calendar-title')).toHaveText(monthTitle(nextMonth));
+
+  await viewButton(page, 'Day').click();
+  const sixteenth = new Date(year, month, 16);
+  await dayButton(sixteenth).click();
+  await expect(widget(page).locator('.calendar-title')).toHaveText(
+    new Intl.DateTimeFormat('en-US', { dateStyle: 'long' }).format(sixteenth),
+  );
+});
+
+test('the calendar uses the site font', async ({ page }) => {
+  await page.goto('/get-involved/about/');
+  await expect(widget(page).locator('.fc-event').first()).toBeVisible();
+  const fonts = await page.evaluate(() => {
+    const family = (selector: string) =>
+      getComputedStyle(document.querySelector(selector)!).fontFamily;
+    return {
+      body: family('body'),
+      title: family('.calendar-title'),
+      event: family('.fc-event'),
+      button: family('.calendar-view-button'),
+      projects: family('aside h3'),
+    };
+  });
+  for (const value of [fonts.title, fonts.event, fonts.button, fonts.projects]) {
+    expect(value).toBe(fonts.body);
+  }
+  expect(fonts.body.toLowerCase()).toContain('onest');
 });
 
 test('the project filter hides and shows meetings', async ({ page }) => {

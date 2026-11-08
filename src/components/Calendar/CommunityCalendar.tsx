@@ -19,7 +19,6 @@ import { MiniCalendar } from '@/components/Calendar/MiniCalendar';
 import { ProjectFilter } from '@/components/Calendar/ProjectFilter';
 import { ChevronLeftIcon, ChevronRightIcon } from '@/components/Icons';
 import type { Calendar } from '@/lib/content';
-import { withBasePath } from '@/lib/site';
 import './calendar.css';
 
 const VIEWS = [
@@ -172,15 +171,6 @@ export function CommunityCalendar({ calendar }: { calendar: Calendar }) {
       className="oai-calendar grid gap-4 lg:grid-cols-[330px_minmax(0,1fr)] lg:items-start"
     >
       <aside aria-label="Calendar navigation" className="calendar-card space-y-6 p-4 sm:p-5">
-        <div className="border-b border-[#e5e7eb] pb-3">
-          <img
-            src={withBasePath('/brand/openapi-logo.webp')}
-            alt={calendar.project.name}
-            width={560}
-            height={152}
-            className="h-[45px] w-auto"
-          />
-        </div>
         <MiniCalendar today={new Date(now)} onSelect={(date) => api()?.gotoDate(date)} />
         <div className="border-t border-[#e5e7eb] pt-8">
           <ProjectFilter
@@ -193,7 +183,7 @@ export function CommunityCalendar({ calendar }: { calendar: Calendar }) {
       </aside>
 
       <section aria-label="Meetings" className="calendar-card min-w-0 p-4 sm:p-8">
-        <div className="flex flex-wrap items-center gap-x-10 gap-y-3">
+        <div className="mb-5 flex flex-wrap items-center gap-x-8 gap-y-3">
           <div className="flex gap-3">
             <button
               type="button"
@@ -234,21 +224,20 @@ export function CommunityCalendar({ calendar }: { calendar: Calendar }) {
               <ChevronRightIcon size={26} strokeWidth={2.6} />
             </button>
           </div>
-        </div>
-
-        <div role="group" aria-label="Calendar view" className="mb-5 mt-3 flex flex-wrap gap-2">
-          {VIEWS.map((entry) => (
-            <button
-              key={entry.type}
-              type="button"
-              aria-pressed={entry.type === active.type}
-              title={`${entry.label} view`}
-              onClick={() => api()?.changeView(entry.type)}
-              className="calendar-view-button"
-            >
-              {entry.label}
-            </button>
-          ))}
+          <div role="group" aria-label="Calendar view" className="flex flex-wrap gap-2 xl:ml-auto">
+            {VIEWS.map((entry) => (
+              <button
+                key={entry.type}
+                type="button"
+                aria-pressed={entry.type === active.type}
+                title={`${entry.label} view`}
+                onClick={() => api()?.changeView(entry.type)}
+                className="calendar-view-button"
+              >
+                {entry.label}
+              </button>
+            ))}
+          </div>
         </div>
 
         <FullCalendar

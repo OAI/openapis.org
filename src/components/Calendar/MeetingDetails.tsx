@@ -38,7 +38,7 @@ export function MeetingDetails({
   return (
     <div data-meeting-details className="grid grid-cols-[1.5rem_minmax(0,1fr)] gap-x-4 gap-y-4">
       <Row icon={<DocumentIcon size={20} />}>
-        <p className="calendar-slab m-0 text-lg">{meeting.title}</p>
+        <p className="calendar-meeting-title m-0 text-lg font-medium">{meeting.title}</p>
         <p className="m-0 mt-1 text-[#334155]">
           <time dateTime={occurrence.start}>{startFormat.format(new Date(occurrence.start))}</time>
         </p>

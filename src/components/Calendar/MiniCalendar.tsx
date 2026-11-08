@@ -40,6 +40,7 @@ function isoWeek(date: Date) {
 export function MiniCalendar({ today, onSelect }: { today: Date; onSelect: (date: Date) => void }) {
   const [month, setMonth] = useState(() => new Date(today.getFullYear(), today.getMonth(), 1));
   const [focused, setFocused] = useState<Date | null>(null);
+  const [selected, setSelected] = useState(() => startOfDay(today));
   const grid = useRef<HTMLTableSectionElement>(null);
 
   const first = addDays(month, -month.getDay());
@@ -51,11 +52,19 @@ export function MiniCalendar({ today, onSelect }: { today: Date; onSelect: (date
   const inMonth = (date: Date) => date.getMonth() === month.getMonth();
   const tabbable =
     days.find((date) => focused && sameDay(date, focused)) ??
+    days.find((date) => sameDay(date, selected) && inMonth(date)) ??
     days.find((date) => sameDay(date, todayStart) && inMonth(date)) ??
     month;
 
   const shift = (months: number) =>
     setMonth(new Date(month.getFullYear(), month.getMonth() + months, 1));
+
+  const select = (date: Date) => {
+    setSelected(date);
+    setFocused(date);
+    if (!inMonth(date)) setMonth(new Date(date.getFullYear(), date.getMonth(), 1));
+    onSelect(date);
+  };
 
   const moveFocus = (target: Date) => {
     setFocused(target);
@@ -137,6 +146,7 @@ export function MiniCalendar({ today, onSelect }: { today: Date; onSelect: (date
                 <td className="py-0.5 text-[#64748b]">{isoWeek(row[0])}</td>
                 {row.map((date) => {
                   const isToday = sameDay(date, todayStart);
+                  const isSelected = sameDay(date, selected);
                   return (
                     <td key={date.toDateString()} className="py-0.5">
                       <button
@@ -145,20 +155,20 @@ export function MiniCalendar({ today, onSelect }: { today: Date; onSelect: (date
                         tabIndex={sameDay(date, tabbable) ? 0 : -1}
                         aria-label={fullDate.format(date)}
                         aria-current={isToday ? 'date' : undefined}
-                        onClick={() => {
-                          setFocused(date);
-                          onSelect(date);
-                        }}
+                        aria-pressed={isSelected}
+                        onClick={() => select(date)}
                         onKeyDown={(event) => onKeyDown(event, date)}
                         className={`mx-auto grid h-8 w-8 place-items-center rounded-full transition-colors ${
-                          isToday
+                          isSelected
                             ? 'bg-[#006fc2] text-white'
-                            : inMonth(date)
-                              ? 'text-[#1e293b] hover:bg-[#f1f5f9]'
-                              : 'text-[#6b7280] hover:bg-[#f1f5f9]'
+                            : isToday
+                              ? 'bg-[#e2e8f0] text-[#0f172a] hover:bg-[#cbd5e1]'
+                              : inMonth(date)
+                                ? 'text-[#1e293b] hover:bg-[#f1f5f9]'
+                                : 'text-[#6b7280] hover:bg-[#f1f5f9]'
                         }`}
                       >
-                        {date.getDate()}
+                        <span className="mini-calendar-digit">{date.getDate()}</span>
                       </button>
                     </td>
                   );
