@@ -45,13 +45,25 @@ const monthOf = (iso: string) => {
   return year * 12 + month - 1;
 };
 
+const WEEK = 7 * 24 * 60 * 60 * 1000;
+const titleOf = (occurrence: Calendar['occurrences'][number]) =>
+  meetings.get(occurrence.meeting)?.title;
+const aloneThatWeek = (occurrence: Calendar['occurrences'][number]) =>
+  calendar.occurrences.every(
+    (other) =>
+      other === occurrence ||
+      titleOf(other) !== titleOf(occurrence) ||
+      Math.abs(Date.parse(other.start) - Date.parse(occurrence.start)) >= WEEK,
+  );
+
 const target = calendar.occurrences.find(
   (occurrence) =>
     monthOf(occurrence.start) === syncMonth &&
     partsIn(new Date(occurrence.start)).day > 7 &&
     meetings.get(occurrence.meeting)?.url &&
     meetings.get(occurrence.meeting)?.recurrence &&
-    occurrence.participants !== null,
+    occurrence.participants !== null &&
+    aloneThatWeek(occurrence),
 )!;
 const targetMeeting = meetings.get(target.meeting)!;
 const targetStart = new Date(target.start);
