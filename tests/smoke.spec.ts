@@ -167,22 +167,24 @@ test('member detail modal is wired up', async ({ page }) => {
   await expect(page.locator('script[src*="iframe-resizer"]')).toHaveCount(1);
 
   await page.waitForFunction(() => typeof window.iFrameResize === 'function');
+  await page.waitForFunction(() => 'landscape2EmbedItemHost' in window);
 
-  const states = await page.evaluate(async () => {
-    const el = document.getElementById('embed-item')!;
-    const read = () => getComputedStyle(el).display;
-    const before = read();
-    window.postMessage({ type: 'showItemDetails', itemId: 'google' }, '*');
-    await new Promise((r) => setTimeout(r, 400));
-    const shown = read();
-    window.postMessage({ type: 'hideItemDetails' }, '*');
-    await new Promise((r) => setTimeout(r, 400));
-    return { before, shown, after: read() };
+  await page.evaluate(() => {
+    window.postMessage({ type: 'showItemDetails', itemId: 'forged' }, '*');
   });
+  await page.waitForTimeout(300);
+  await expect(modal).toHaveCSS('display', 'none');
 
-  expect(states.before).toBe('none');
-  expect(states.shown).toBe('block');
-  expect(states.after).toBe('none');
+  await page
+    .frameLocator('#iframe-landscape')
+    .getByRole('button', { name: / info$/ })
+    .first()
+    .click();
+  await expect(modal).toHaveCSS('display', 'block');
+  await expect(page.locator('body')).toHaveCSS('overflow-y', 'hidden');
+
+  await page.frameLocator('#embed-item').getByRole('button', { name: 'Close' }).click();
+  await expect(modal).toHaveCSS('display', 'none');
 });
 
 test('wordpress shortcodes do not reach the page', async ({ page }) => {
