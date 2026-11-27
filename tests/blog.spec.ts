@@ -1,15 +1,20 @@
+import { getPosts, isOnBlogIndex } from '@/lib/content';
 import { expect, test } from './fixtures';
 
 const NAV_ACTIVE = 'rgb(109, 166, 67)';
+const OUTREACH = 'New Outreach Co-Chairs Announced';
 
 test.describe('blog index', () => {
-  test('lists the same posts as the live site, newest first', async ({ page }) => {
+  test('lists every index post, newest first', async ({ page }) => {
+    const listed = (await getPosts()).filter(isOnBlogIndex);
     await page.goto('/blog/');
     const cards = page.locator('[data-post-card]');
-    await expect(cards).toHaveCount(180);
-    await expect(cards.first().getByRole('heading', { level: 2 })).toHaveText(
-      'New Outreach Co-Chairs Announced',
-    );
+    await expect(cards).toHaveCount(listed.length);
+
+    const dates = await cards
+      .locator('time')
+      .evaluateAll((times) => times.map((time) => time.getAttribute('datetime') ?? ''));
+    expect(dates).toEqual([...dates].sort().reverse());
 
     const hrefs = await cards
       .getByRole('heading', { level: 2 })
@@ -30,7 +35,7 @@ test.describe('blog index', () => {
 
   test('cards carry the live meta line, excerpt and read more', async ({ page }) => {
     await page.goto('/blog/');
-    const card = page.locator('[data-post-card]').first();
+    const card = page.locator('[data-post-card]').filter({ hasText: OUTREACH });
 
     await expect(card.locator('p').first()).toHaveText('July 22, 2026 in Blog');
     await expect(card.getByRole('link', { name: 'Blog', exact: true })).toHaveAttribute(
@@ -45,7 +50,7 @@ test.describe('blog index', () => {
 
   test('the whole card opens the post', async ({ page }) => {
     await page.goto('/blog/');
-    await page.locator('[data-post-card]').first().click();
+    await page.locator('[data-post-card]').filter({ hasText: OUTREACH }).click();
     await expect(page).toHaveURL(/\/blog\/2026\/07\/22\/new-outreach-co-chairs-announced\/$/);
   });
 
@@ -53,7 +58,7 @@ test.describe('blog index', () => {
     await page.goto('/blog/');
     await page
       .locator('[data-post-card]')
-      .first()
+      .filter({ hasText: OUTREACH })
       .getByRole('link', { name: 'Blog', exact: true })
       .click();
     await expect(page).toHaveURL(/\/category\/blog\/$/);
